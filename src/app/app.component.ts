@@ -1,7 +1,7 @@
 import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { fromEvent, from } from 'rxjs';
-import { map, take, filter, debounceTime, distinct, distinctUntilChanged, mergeMap } from 'rxjs/operators';
+import { fromEvent } from 'rxjs';
+import { map, filter, debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
 @Component({
   selector: 'my-app',
