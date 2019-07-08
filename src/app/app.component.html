@@ -9,4 +9,5 @@
   <mat-form-field>
     <input matInput type="text" placeholder="searchTerm" [(ngModel)]="searchTerm" (ngModelChange)="newSearch(searchTerm)">
   </mat-form-field>
+  <div *ngFor="let result of results | async" > {{result}}</div>
 </section>
